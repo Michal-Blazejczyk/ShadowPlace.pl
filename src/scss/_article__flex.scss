@@ -7,9 +7,14 @@
    text-align: left;
 }
 .article__list--list {
-    margin: 25px 40px;
+    padding: 13px;
+    /* margin: 25px 40px; */
     text-transform: uppercase;
-    
+    border: 1px solid rgb(228, 227, 227);
+}
+.article__list--list:hover {
+    background-color: rgb(221, 220, 220);
+    transition: 0.5s;
 }
 .article__list--link {
     font-size: 13px;
@@ -70,10 +75,10 @@
      padding: 20px;
     }
     
-    .fa-sign-out-alt {
+    /* .fa-sign-out-alt {
     margin-left: 50px;
 
-}
+} */
 .article_title {
     text-decoration: none;
     font-size: 20px;

@@ -15,6 +15,7 @@
 @import "./animation";
 @import "./icon&pictogram";
 @import "./article__flex";
+@import "./category.scss";
 
 
 $default-font: arial, sans-serif;
@@ -49,6 +50,7 @@ html {
 .fa-map-marker-alt,
 .fa-globe-americas {
   color: $main-color;
+  margin-right: 10px;
   font-size: 4rem; 
 }
 .fa-hand-pointer,
@@ -57,7 +59,6 @@ html {
 .fa-users {
   color: $main-color;
   font-size: 6rem; 
-  
 }
 .fa-exclamation {
   color: $main-color;
@@ -74,13 +75,19 @@ html {
   color: $facebook;
   font-size: 4rem;
   margin-right: 30px;
+  margin-left: 30px;
 }
 .fa-sign-out-alt {
   color: $main-color;
   font-size: 16px;
 
 }
-
+.main-title {
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
 
 #tooltipContainer
 {
