@@ -1,15 +1,18 @@
 .category-wrap {
     flex-wrap: wrap;
-    width: 100%;
+   width: 100%;
+   
     display: flex;
-    margin-bottom: 30px;
+    /* border: 1px solid red; */
     justify-content: space-around;
     align-content: space-around; 
+   
 }
 .category-right {
-    justify-content: space-around;
-    align-content: space-around; 
-    position: relative;
+    /* justify-content: space-around;
+    align-content: space-around;  */
+    margin-top: 35px;
+    text-align: center;
     box-sizing: border-box;
     flex-direction: column;
     align-items: stretch;
@@ -18,66 +21,76 @@
     /* padding: 10px;  */
     /* kontener */
     display: flex;
+    height: 180px;
 } 
-.category-div {
+.category-div img {
+    width: 90%;
+    
+}
+.category-div img:hover {
+    width: 90%;
+    box-shadow: 0px 0px 6px $main-color;
+}
+
+/* .category-div {
     position: absolute;
-    /* margin: 10px 10px; */
+   
     text-transform: uppercase;
    padding: 10px;
     font-size: 14px;
     font-weight: bold;
     text-align: center;
     width: 100%;
-}
-.category-div .category-title {
+} */
+/* .category-div .category-title {
     list-style: none;
     text-decoration: none;
     background-color: rgba(0,0,0,0.4);
     padding: 5px;
     font-size: 1.8rem;
-}
+} */
 .category-title {
-    color: white;
+    color: black;
     font-weight: bold;
+    text-decoration: none;
 }
-.category-div .category-title:hover {
+.category-title:hover {
+    color: $main-color;
+    transition: 1s;
+}
+/* .category-div .category-title:hover {
     color: $main-color;
     transition: 0.5s;
     border-bottom: 1px solid $main-color;
-}
-.category-description {
+} */
+/* .category-description {
     flex-wrap: wrap;
-    margin-top: 250px;
-    width: 83%;   
-} 
+    margin-top: 260px;
+    width: 100%;   
+}  */
 
-.category-right {
-    text-align: justify;
-    font-size: 12px;
-} 
-.article__image>* {
+
+/* .article__image>* {
     padding-bottom: 35px;
-}
-.category-right img {
+} */
+/* .category-right img {
     justify-content: flex-end;
     align-items: stretch;
     width: 100%;
     align-self: center;
-}
-.category-right img:hover {
+} */
+/* .category-right img:hover {
     box-shadow: 0 0 2px 1px $main-color;
-}
-.category-right .category-description.price {
+} */
+/* .category-right .category-description.price {
     flex-grow: 1;
-    /* kontener */
+    
     display: flex;
     flex-direction: column;
-}
+} */
 
-.category-right p.price span {
+/* .category-right p.price span {
     border: 2px solid black;
     background-color: #fff;
     padding: 10px;
-}
-
-
+} */

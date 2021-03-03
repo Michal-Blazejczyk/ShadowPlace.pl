@@ -16,6 +16,7 @@
 @import "./icon&pictogram";
 @import "./article__flex";
 @import "./category.scss";
+@import "./nav-hamburger.scss";
 
 
 $default-font: arial, sans-serif;
@@ -63,16 +64,24 @@ html {
   color: $main-color;
   font-size: 6rem; 
 }
-.fa-exclamation {
+.fa-exclamation,
+.fa-sign-in {
   color: $main-color;
   font-size: 3rem;
   margin-right: 5px; 
   
 }
+.fa-circle {
+  font-size: 8px;
+  color: $main-color;
+  margin-right: 15px;
+  margin-left: 15px;
+  
+}
 .fa-sign-in-alt {
   color: $main-color;
   font-size: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .fa-facebook {
   color: $facebook;
@@ -83,24 +92,44 @@ html {
 }
 .fa-sign-out-alt {
   color: $main-color;
-  font-size: 16px;
-
+  font-size: 15px;
+  margin: 4px;
+  margin-left: 5px;
+  
 }
 .main-wrap {
   
   width: 100%;
 }
+.fa-sign-out {
+  font-size: 2rem;
+}
 .main-title {
   /* text-align: center; */
   width: 100%;
   text-transform: uppercase;
-  margin: 19px 200px;
+  text-align: center;
+  /* margin: 19px 200px; */
   font-size: 2rem;
  /*  background-color: rgba(0,0,0,0.4); */
   padding: 5px;
   color: black;
 }
-
+.main-title {
+    width: 100%;
+    text-align: center; 
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;  
+  }
+  .main-description {
+  font-size: 1.5rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;  
+  font-weight: bold;
+  line-height: 1.7;
+  text-align: justify;
+  width: 93%;
+  margin: auto;
+}
 #tooltipContainer
 {
     border-bottom: 1px solid white;

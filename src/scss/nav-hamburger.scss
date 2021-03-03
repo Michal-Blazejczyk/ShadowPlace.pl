@@ -1,0 +1,35 @@
+.example
+{
+    display: none;
+    width: 250px;
+    padding: 10px;
+}
+table:hover 
+{
+    background-color: rgba(200,200,200, 0.7); 
+    transition: 1s;
+    border: black;
+}
+table img:hover 
+{
+    display: none;  
+}
+table:hover .example
+{
+    display: block;
+    transition: 1s;
+}
+@media(max-width:640px)
+    {
+       .nav
+       {
+        display: none;
+       }
+    } 
+
+
+ 
+
+
+
+
