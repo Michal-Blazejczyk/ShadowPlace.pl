@@ -3,9 +3,9 @@
     padding: 5px 0;
     border: 1px solid $main-color;
     background: linear-gradient(0deg, rgba(2,0,36,0.7) 0%, rgba(31,130,142,1) 48%, rgba(0,212,255,1) 100%);
-    .sm-links {
+    /* .sm-links {
         flex-basis: 30%;
-    }
+    } */
 }
 .footer-wrap {
     justify-content: space-evenly;
@@ -50,7 +50,17 @@
     color: black;
     padding: 1px;
     font-size: 7px;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 10px;
+    margin-right: 10px;
     background-color: $main-color;
 }
+ @media (max-width: 900px) {
+    .footer-wrap {
+      flex-wrap: wrap;
+    }
+    .sm-links {
+        flex-basis: 100%;
+        order: 3;
+    } 
+  } 

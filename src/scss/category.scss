@@ -1,7 +1,6 @@
 .category-wrap {
     flex-wrap: wrap;
    width: 100%;
-   
     display: flex;
     /* border: 1px solid red; */
     justify-content: space-around;
@@ -51,7 +50,7 @@
 } */
 .category-title {
     color: black;
-    font-weight: bold;
+    font-size: 12px;
     text-decoration: none;
 }
 .category-title:hover {

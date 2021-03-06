@@ -12,12 +12,15 @@
         
     }
     ul {
-        
-        background: linear-gradient(0deg, rgba(2,0,36,0.7) 0%, rgb(31, 130, 142) 48%, rgba(0,212,255,1) 100%); padding: 25px 25px;
        
+        background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgb(31, 130, 142) 48%, rgba(0,212,255,1) 100%); 
+        padding: 25px 25px;
+       z-index: 44;
     }
     ul a {
         border-bottom-left-radius: 7px;
+        color: beige;
+        
         border-top-right-radius: 7px;
         border-top-left-radius: 7px;
         /* padding: 15px 0px; */
@@ -39,7 +42,7 @@
 }
 
 .nav  li ul  {
-    background: linear-gradient(0deg, rgba(31,130,142,0.67) 48%, rgba(2,0,36,0.67) 0%, rgba(0,212,255,0.67) 100%);
+    background: linear-gradient(0deg, rgba(31,130,142,0.9) 48%, rgba(2,0,36,0.9) 0%, rgba(0,212,255,0.9) 100%);
     
     display: none;
 }
@@ -49,22 +52,23 @@
     width: 210px;
     margin:  12px -78px;
     height: 500px;
+   
 }
 
 .menu-nav {
     height: 75px;
     padding: 25px 0 15px 0;
-    /* background: linear-gradient(0deg, rgba(2,0,36,0.7) 0%, rgba(31,130,142,1) 48%, rgba(0,212,255,1) 100%); */
+    background: linear-gradient(0deg, rgba(2,0,36,0.7) 0%, rgba(31,130,142,1) 48%, rgba(0,212,255,1) 100%);
     display: flex;
 }
 .menu-nav__item {
-    color: white;
+    color: beige;
     margin: -25px 15px;
     font-size: 2rem;
     text-transform: uppercase;
     list-style: none;    
     padding: 20px;
-    line-height: 3;
+    line-height: 1.8;
     cursor: pointer;
     ul li {
         color: white;

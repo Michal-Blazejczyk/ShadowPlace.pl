@@ -1,19 +1,21 @@
 .article__list {
     
     flex-basis: 100%;
-    min-height: 60vh;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     &--title {
         text-align: center;
+        font-size: 17px;
     }
     &--description {
         margin: auto;
         text-align: justify;
-        width: 80%;
-        margin-top: 30px;
+        width: 88%;
+        margin-top: 5px;
+        font-size: 12px;
     }
     &--subtitle {
         text-align: center;
-        margin-top: 30px;
+        margin-top: 21px;
+        font-size: 14px;
     }
 }

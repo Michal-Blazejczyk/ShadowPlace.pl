@@ -93,8 +93,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/zaluzje-poziome.html",
       inject: true,
-      chunks: ["index",],
+      chunks: ["index"],
       filename: "zaluzje-poziome.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/zaluzje-aluminiowe16mm.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "zaluzje-aluminiowe16mm.html",
     }),
     new HtmlWebpackPlugin({
       template: "./src/pages/rolety.html",
@@ -102,6 +108,20 @@ module.exports = {
       chunks: ["index"],
       filename: "rolety.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/zaluzje-panelowe.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "zaluzje-panelowe.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/zaluzje-aluminiowe16-uni.html",
+      inject: true,
+      chunks: ["index"],
+      filename: "zaluzje-aluminiowe16-uni.html",
+    }),
+    
+    
     
     
   ],
