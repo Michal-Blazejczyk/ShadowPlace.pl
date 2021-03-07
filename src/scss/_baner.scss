@@ -40,3 +40,14 @@
     transform: translate(-50%, -50%);
     animation: txt 15s linear infinite both;
 }
+@media(max-width: 900px)
+{
+    .main-article__title {
+       font-size: 25px; 
+    }
+   .pictogram
+   {
+   font-size: 9px;
+   }
+   
+}  

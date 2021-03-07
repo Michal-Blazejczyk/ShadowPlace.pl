@@ -1,3 +1,5 @@
+
+
 .article__flex--wrapper{
     display: flex;
     
@@ -47,6 +49,7 @@
     display: flex;
     min-height: 98vh;
     flex-direction: row;
+    margin-top: 20px;
     /* justify-content: space-around;
     align-content: space-around; 
     margin-bottom: 30px; */
@@ -58,8 +61,8 @@
     /* flex-basis: 100%; */
     /* flex-wrap: wrap; */
     /* padding: 10px; */
-    width: 100%;
-    
+    width: 93%;
+    line-height: 1.2;
     text-align: justify;
     /* kontener */
    /*  display: flex; */
@@ -103,61 +106,21 @@
     padding: 5px;
     font-size: 12px;
 }
-/* .article__title-div .article_title:hover {
-    color: $main-color;
-    transition: 0.5s;
-    border-bottom: 1px solid $main-color;
-}
-.article__description {
-    display: flex;
-    border: 1px solid blue;  */
-    /* flex-wrap: wrap; */
-   /*  width: 100%; */
-   
-    /* text-align: justify;
-    margin: auto;
-    margin-bottom: 10px; */
-/* }  */
-/* .article_wrap-link {
-    margin-left: 40px;
-    font-weight: bold;
-    list-style: none;
-    text-decoration: none;
-    
-}
-.article_wrap-link:hover {
-    color: $main-color;
-    transition: 0.5s;
-}
-.article__wrap-right { */
-   /*  text-align: justify; */
-  /*   font-size: 12px;
-    border: 1px solid red; */
-    
-/* } */
-/*  .article__image>* {
-    padding-bottom: 35px;
-} */
-/* .article__wrap-right img {
-     justify-content: flex-end;
-    border: 1px solid blue;
-    align-items: stretch;
-    width: 10%;
-    align-self: center;
-   } */
-/* .article__wrap-right img:hover {
-    box-shadow: 0 0 2px 1px $main-color;
+
+@media(max-width: 900px)
+{
+    .example-link
+   {
+   font-size: 10px;
    }
-    .article__wrap-right .article__description.price { */
-    /* flex-grow: 1; */
-    /* kontener */
-  /*   display: flex;
-    flex-direction: column; */
-   /* } */ 
- 
-   /* .article__wrap-right p.price span {
-    border: 2px solid black;
-    background-color: #fff;
-    padding: 10px;
-   } */
+   .article__list--link {
+       font-size: 10px;
+   }
+   .main-title {
+       font-size: 10px;
+   }
+   .article__image {
+       width: 30%;
+   }
+}  
 
