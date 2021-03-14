@@ -1,0 +1,84 @@
+.section {
+    display: flex;
+    flex-direction: row;
+   /*  align-items: stretch;
+    justify-content: end; */
+}
+.section1 {
+    display: flex;
+    flex-direction: row;
+   /*  align-items: stretch;
+    justify-content: end; */
+    min-height: 30vh;
+}
+.ten {
+    align-self: stretch;
+    flex-basis: 1;
+    display: flex; 
+    flex-grow: 1;
+    background-color: blueviolet;
+    flex-direction: column;
+    width: 80vh;
+    justify-content: end; 
+    align-items: end; 
+}
+.ten11 {
+    align-self: stretch;
+    
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 30vh;    background-color: rgb(43, 226, 195);
+    flex-direction: column;
+    width: 30vh;
+    justify-content: end; 
+    align-items: end; 
+}
+.ten1 {
+    background-color: bisque;
+    align-self: stretch;
+    flex-basis: 1;
+    display: flex;
+    flex-grow: 1;
+}
+.ten2 {
+    background-color: rgb(128, 113, 96);
+    
+}
+.ten3 {
+    background-color: rgb(106, 131, 107);
+  height: 10vh;
+}
+.ten12 {
+    background-color: rgb(106, 131, 107);
+    min-height: 30vh;
+}
+.ten4 {
+    background-color: rgb(31, 218, 40);
+    height: 5vh;
+    
+}
+.ten5 {
+    background-color: rgb(158, 80, 165);
+  height: 5vh;
+}
+.ten6 {
+    background-color: rgb(73, 82, 161);
+    height: 5vh;
+    
+}
+.ten9 {
+    background-color: rgb(31, 218, 40);
+    width: 24vh;
+    align-content: center;
+    align-self: auto;
+}
+.ten8 {
+    background-color: rgb(14, 36, 15);
+}
+.ten10 {
+    background-color: rgb(226, 206, 150);
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+}
