@@ -100,7 +100,17 @@
     flex-basis: 100%;
     
   }
+  .banner-title {
+      margin-top: 20px;
+  }
+  .wrap-pictures {
+      justify-content: center;
+      align-items: center;
+  }
 }
+@media (max-width: 640px) {
+  
+  }
 .thumbnail
 {
     width: 70px;

@@ -8,6 +8,7 @@
 @import "modules/hello.scss";
 @import "./wrapper";
 @import "./nav";
+@import "./burger";
 @import "./header";
 @import "./article";
 @import "./footer";
@@ -21,6 +22,7 @@
 @import "./main-category.scss";
 @import "./kontakt.scss";
 @import "./systemy.scss";
+
 
 
 $default-font: arial, sans-serif;
@@ -107,10 +109,15 @@ html {
   margin-left: 40px;
   margin-right: 30px;
 }
-.fa-facebook-square {
+.fa-facebook-square,
+.fa-amazon-pay,
+.fa-cc-mastercard,
+.fa-apple,
+.fa-windows,
+.fa-android {
   color: black;
-  font-size: 4rem;
-  margin-left: 30px;
+  font-size: 2.5rem;
+  margin-left: 20px;
   
 }
 .fa-sign-out-alt {
@@ -185,5 +192,14 @@ html {
     font-size: 9px;
   }
 }
-
+@media(max-width: 900px) {
+  .tooltip {
+    width: 25px;
+}
+}
+@media(max-width: 480px) {
+  .fa-hand-pointer, .fa-tachometer-alt, .fa-tv, .fa-users {
+    font-size: 2rem;
+}
+}
 

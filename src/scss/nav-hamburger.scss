@@ -9,6 +9,7 @@ table:hover
     background-color: rgba(200,200,200, 0.7); 
     transition: 1s;
     border: black;
+   
 }
 table img:hover 
 {
@@ -17,7 +18,6 @@ table img:hover
 table:hover .example
 {
     display: block;
-    transition: 1s;
 }
 /* @media(max-width:640px)
     {
@@ -26,10 +26,3 @@ table:hover .example
         display: none;
        }
     }  */
-
-
- 
-
-
-
-

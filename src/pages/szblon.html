@@ -14,7 +14,7 @@
 
       <header class="header"> 
         <div class="header__logo">
-          <img class="header__logo-image" src="../foto/logo.png">
+          <a href="./index.html"><img class="header__logo-image" src="../foto/logo.png" alt="logo firmy ShadowPlace"></a>
         </div>
         <div class="header__help">
           <i class="fas fa-phone-volume"></i>Pomoc
@@ -55,7 +55,7 @@
                           <li><a class="menu-nav__link" href="zaluzje-plisowane.html">Żaluzje plisowane</a></li>
                           <li><a class="menu-nav__link" href="zaluzje-pionowe.html">Żaluzje pionowe (verticale)
                             </a></li>
-                          <li><a class="menu-nav__link" href="zaluzja-rzymska.html">Żaluzje rzyskie</a></li>
+                          <li><a class="menu-nav__link" href="roleta-rzymska.html">Rolety rzymskie</a></li>
                           <li><a class="menu-nav__link" href="moskitiery.html">Moskitiery</a></li>
                           <li><a class="menu-nav__link" href="karnisze.html">Karnisze</a></li>
                           <li><a class="menu-nav__link" href="ogrody-zimowe.html">Ogrody zimowe</a></li>
@@ -79,7 +79,38 @@
         </ul>
         
       </nav>  
+         <!------------------------burger-side--------------------------> 
+       <div class="burger">
+        <i class="fas fa-bars show off"></i>
+        <i class="fas fa-times off"></i>
+      </div>
+      <nav class="menu-side">
+        <div class="nav-second">
+          <ul class="menu-nav__side">
+              
+            <li><a class="menu-nav-side__link" href="zaluzje-poziome.html">Żaluzje poziome</a></li>
+            <li><a class="menu-nav-side__link" href="rolety.html">Rolety</a></li>
+            <li><a class="menu-nav-side__link" href="zaluzje-panelowe.html">Żaluzje panelowe</a></li>
+            <li><a class="menu-nav-side__link" href="zaluzje-plisowane.html">Żaluzje plisowane</a></li>
+            <li><a class="menu-nav-side__link" href="zaluzje-pionowe.html">Żaluzje pionowe (verticale)
+            </a></li>
+            <li><a class="menu-nav-side__link" href="roleta-rzymska.html">Rolety rzymskie</a></li>
+            <li><a class="menu-nav-side__link" href="moskitiery.html">Moskitiery</a></li>
+            <li><a class="menu-nav-side__link" href="karnisze.html">Karnisze</a></li>
+            <li><a class="menu-nav-side__link" href="ogrody-zimowe.html">Ogrody Zimowe</a></li>
+            <li><a class="menu-nav-side__link" href="zaslony.html">Zasłony</a></li>
+            <li><a class="menu-nav-side__link" href="maty-drewniano-bambusowe.html">Maty drewniano-bambusowe</a></li>
+            <li><a class="menu-nav-side__link" href="markizy.html">Markizy</a></li>
+            <li><a class="menu-nav-side__link" href="pergole.html">Pergole</a></li>
+            <li><a class="menu-nav-side__link" href="Veranda.html">Weranda</a></li>
+            <li><a class="menu-nav-side__link" href="zip.html">Zip</a></li>
+            <li><a class="menu-nav-side__link" href="screen.html">Screen</a></li>
+            <li><a class="menu-nav-side__link" href="smart-home.html">Smart Home</a></li>
+            <li><a class="menu-nav-side__link" href="fotowoltaika.html">Fotowoltaika</a></li>
+          </ul>
         
+        </div>
+      </nav>  
         <!-------------------------article-flex-------------------->
       
       <section class="article__flex--wrapper">
@@ -479,104 +510,6 @@
         
       
 </div>
-<!------------------------------wrapper-end------------------------------------>
-    
-<script>
-  window.onload = function()
-{
-    var mainImage = document.getElementById("mainImage");
-    var image = new Image();
-    
-    mainImage.appendChild(image);
-    
-    var thumbnails = document.getElementsByClassName("thumbnail");
-    
-    var currentThumbnail = thumbnails[0];
-    
-    image.src = currentThumbnail.getAttribute("src");
-    currentThumbnail.className += " current";
-    
-    for (var i = 0; i < thumbnails.length; i++)
-    {
-        thumbnails[i].onmouseover = function()
-        {
-            currentThumbnail.className = currentThumbnail.className.replace("current", "");
-            currentThumbnail = this;
-            currentThumbnail.className += " current";
-            
-            image.src = this.getAttribute("src");
-        };
-    }
-    
-};
 
-</script>
-    <script>
-        function createTooltips()
-{
-    var elementsWithTooltip = document.getElementsByClassName("tooltip");
-    
-    var tooltipContainer = document.createElement("div");
-    tooltipContainer.id = "tooltipContainer";
-    document.body.appendChild(tooltipContainer);
-    
-    var tmpTitles = [];
-    
-    for (var i = 0; i < elementsWithTooltip.length; i++)
-    {
-        tmpTitles[i] = elementsWithTooltip[i].title;
-        
-        elementsWithTooltip[i].tmp_id = i;
-        
-        elementsWithTooltip[i].addEventListener("mouseover",function(e)
-        {
-           tooltipContainer.innerHTML = this.title;
-           
-           this.title = "";
-           tooltipContainer.style.left = e.clientX + document.documentElement.scrollLeft + 15 + "px";
-           tooltipContainer.style.top = e.clientY + document.documentElement.scrollTop - 15 + "px";
-           
-           tooltipContainer.style.display = "block";
-        });
-        elementsWithTooltip[i].addEventListener("mouseout",function(e)
-        {
-         
-           this.title = tmpTitles[this.tmp_id];
-           tooltipContainer.innerHTML = this.title;
-          
-           tooltipContainer.style.display = "none";
-        });        
-    }
-}
-window.onload = function()
-{
-    createTooltips();
-    var mainImage = document.getElementById("mainImage");
-    var image = new Image();
-    
-    mainImage.appendChild(image);
-    
-    var thumbnails = document.getElementsByClassName("thumbnail");
-    
-    var currentThumbnail = thumbnails[0];
-    
-    image.src = currentThumbnail.getAttribute("src");
-    currentThumbnail.className += " current";
-    
-    for (var i = 0; i < thumbnails.length; i++)
-    {
-        thumbnails[i].addEventListener("mouseover",function()
-        {
-          
-            currentThumbnail.className = currentThumbnail.className.replace("current", "");
-            currentThumbnail = this;
-            currentThumbnail.className += " current";
-            
-            image.src = this.getAttribute("src");
-        });
-    }
-    
-};
-    </script>
   </body>
 </html>

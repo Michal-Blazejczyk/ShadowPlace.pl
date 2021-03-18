@@ -33,7 +33,27 @@
 .pictogram:nth-last-child(1) {
     border-right: none;
 }
-
+.pictogram640px {
+    color: beige;
+   
+}
 
 
 /* <img class="alignnone wp-image-1029 size-full" title="" src="http://shadowplace.pl/wp-content/uploads/2015/08/1_horizontal-blinds.png" alt="" width="70" height="70"> */
+@media(max-width: 640px)
+    {    
+       
+       .section__icons {
+           padding: 5px;
+       }
+    }  
+@media(max-width: 480px)
+    {
+       /*  .section-pictogram {
+      
+       } */
+       .pictogram {
+        font-size: 7px;
+    }
+    
+    }  
