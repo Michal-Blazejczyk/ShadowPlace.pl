@@ -94,10 +94,10 @@
     transition: 0.5s; 
 }
 .nav-btn {
-    animation: shakes 5s linear infinite; 
-    border: 1px solid $main-color; 
-    padding: 10px 15px;
-    color: $main-color; 
+    animation: shakes 5s linear infinite;
+    border: 1px solid #f18e04;
+    padding: 6px 27px;
+    color: #f18e04;
 }
 .nav-btn:hover {
     color: $second-color;

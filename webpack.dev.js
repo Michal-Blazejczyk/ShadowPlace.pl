@@ -1,5 +1,6 @@
 const merge = require("webpack-merge");
 const common = require("./webpack.common.js");
+/* var fileContent = require("php!./file.php"); */
 
 module.exports = merge(common, {
   devtool: "source-map",
@@ -35,6 +36,13 @@ module.exports = merge(common, {
               sourceMap: true,
             },
           },
+        ],
+      },
+      {
+        test: /\.php$/,
+        loaders: [
+          'html-minify',
+          'php-loader'
         ],
       },
     ],

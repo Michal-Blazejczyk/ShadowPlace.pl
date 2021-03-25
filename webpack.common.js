@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
-
+const CopyWebpackPlugin = require("copy-webpack-plugin")
+/* var fileContent = require("php!./file.php"); */
 module.exports = {
   /* here you can define another js file */
   entry: {
@@ -56,6 +56,13 @@ module.exports = {
               name: "img/[name].[hash:8].[ext]",
             },
           },
+        ],
+      },
+      {
+        test: /\.php$/,
+        loaders: [
+          'html-minify',
+          'php-loader'
         ],
       },
     ],
@@ -140,18 +147,6 @@ module.exports = {
       inject: true,
       chunks: ["index","hamburger"],
       filename: "zaluzje-plisowane.html",
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/pages/zaluzje-plisowane20.html",
-      inject: true,
-      chunks: ["index","hamburger"],
-      filename: "zaluzje-plisowane20.html",
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/pages/zaluzje-plisowane50.html",
-      inject: true,
-      chunks: ["index","hamburger"],
-      filename: "zaluzje-plisowane50.html",
     }),
     new HtmlWebpackPlugin({
       template: "./src/pages/zaluzje-plisowane20Coiflor.html",
@@ -539,18 +534,6 @@ module.exports = {
       filename: "karnisze.html",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/karnisze-reczne.html",
-      inject: true,
-      chunks: ["index","hamburger"],
-      filename: "karnisze-reczne.html",
-    }),
-    new HtmlWebpackPlugin({
-      template: "./src/pages/karnisze-elektryczne.html",
-      inject: true,
-      chunks: ["index","hamburger"],
-      filename: "karnisze-elektryczne.html",
-    }),
-    new HtmlWebpackPlugin({
       template: "./src/pages/karnisze-reczneKS-CS.html",
       inject: true,
       chunks: ["index","hamburger","tooltip"],
@@ -586,13 +569,6 @@ module.exports = {
       chunks: ["index","hamburger","tooltip"],
       filename: "ogrody-zimoweWMU.html",
     }),
-    new HtmlWebpackPlugin({
-      template: "./src/pages/ogrody-zimoweRoofio.html",
-      inject: true,
-      chunks: ["index","hamburger","tooltip"],
-      filename: "ogrody-zimoweRoofio.html",
-    }),
-    
     new HtmlWebpackPlugin({
       template: "./src/pages/ogrody-zimoweSLS.html",
       inject: true,
@@ -780,19 +756,52 @@ module.exports = {
       filename: "pergole.html",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/pages/pergole-segmentowa.html",
+      template: "./src/pages/pergole-segmentowe-proste.html",
       inject: true,
-      chunks: ["index","hamburger"],
-      filename: "pergole-segmentowa.html",
-    }),
+      chunks: ["index","hamburger","tooltip"],
+      filename: "pergole-segmentowe-proste.html",
+    }), 
     new HtmlWebpackPlugin({
-      template: "./src/pages/pergole-verandowa.html",
+      template: "./src/pages/pergole-segmentowe-skosne.html",
+      inject: true,
+      chunks: ["index","hamburger", "tooltip"],
+      filename: "pergole-segmentowe-skosne.html",
+    }), 
+    new HtmlWebpackPlugin({
+      template: "./src/pages/veranda.html",
+      inject: true,
+      chunks: ["index","hamburger", "tooltip"],
+      filename: "veranda.html",
+    }), 
+    new HtmlWebpackPlugin({
+      template: "./src/pages/veranda-wielkogabarytowa-sun-pro.html",
+      inject: true,
+      chunks: ["index","hamburger", "tooltip"],
+      filename: "veranda-wielkogabarytowa-sun-pro.html",
+    }), 
+    new HtmlWebpackPlugin({
+      template: "./src/pages/veranda-evo.html",
+      inject: true,
+      chunks: ["index","hamburger", "tooltip"],
+      filename: "veranda-evo.html",
+    }), 
+    new HtmlWebpackPlugin({
+      template: "./src/pages/veranda-FTS.html",
+      inject: true,
+      chunks: ["index","hamburger", "tooltip"],
+      filename: "veranda-FTS.html",
+    }), 
+    new HtmlWebpackPlugin({
+      template: "./src/pages/veranda-EOS.html",
+      inject: true,
+      chunks: ["index","hamburger", "tooltip"],
+      filename: "veranda-EOS.html",
+    }), 
+    new HtmlWebpackPlugin({
+      template: "./src/pages/veranda-ogrody-okna-dachowe.html",
       inject: true,
       chunks: ["index","hamburger"],
-      filename: "pergole-verandowa.html",
-    }),
-    
-    
-    
+      filename: "veranda-ogrody-okna-dachowe.html",
+    }), 
   ],
 };
