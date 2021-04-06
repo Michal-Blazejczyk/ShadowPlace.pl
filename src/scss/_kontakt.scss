@@ -1,15 +1,24 @@
 .section {
     display: flex;
     flex-direction: row;
-   /*  align-items: stretch;
-    justify-content: end; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around; 
+    /* align-items: stretch;
+    justify-content: center; */
+}
+.panel-widget-style {
+
+    text-align: center;
 }
 .section1 {
     display: flex;
     flex-direction: row;
+    
    /*  align-items: stretch;
     justify-content: end; */
-    min-height: 30vh;
+    min-height: 40vh;
+    margin-left: 30px;
 }
 .ten {
     align-self: stretch;
@@ -28,7 +37,7 @@
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    height: 30vh;    background-color: rgb(43, 226, 195);
+    background-color: rgb(43, 226, 195);
     flex-direction: column;
     width: 30vh;
     justify-content: end; 
@@ -50,8 +59,9 @@
   height: 10vh;
 }
 .ten12 {
-    background-color: rgb(106, 131, 107);
-    min-height: 30vh;
+   
+    min-width: 50vh;
+    text-align: center;
 }
 .ten4 {
     background-color: rgb(31, 218, 40);
@@ -68,17 +78,34 @@
     
 }
 .ten9 {
-    background-color: rgb(31, 218, 40);
-    width: 24vh;
+    
+    min-width: 50vh;
     align-content: center;
     align-self: auto;
 }
-.ten8 {
-    background-color: rgb(14, 36, 15);
-}
+
 .ten10 {
     background-color: rgb(226, 206, 150);
     display: flex;
     flex-direction: column;
     height: 30vh;
+}
+.textwidget {
+   
+    height: 250px;
+    width: 500px;
+}
+.thanks {
+    margin-top: 150px;
+    margin-bottom: 370px;
+    flex-basis: 100vw;
+}
+.thanks h2 {
+    text-align: center;
+    flex-basis: 100vw;
+    font-size: 15px;
+}
+.thanks-back {
+    margin-top: 30px;
+    color: $main-color;
 }

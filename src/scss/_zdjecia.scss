@@ -78,14 +78,22 @@
     margin: 20px;
     font-size: 12px;
 }
-.to6 {
- 
-   
+.main-title-description-div {
+    text-align: justify;
+    line-height: 1.3;
   /* flex-grow: 1;
   flex-grow: 30%; */
 }
- 
-.to4 {
+/* .about-company-wrap {
+    
+} */
+.article__wrap {
+}
+.about-company-wrap-special {
+    
+    margin-left: 30px;
+}
+.main-title-description-wrap {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;

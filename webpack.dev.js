@@ -1,6 +1,6 @@
 const merge = require("webpack-merge");
 const common = require("./webpack.common.js");
-/* var fileContent = require("php!./file.php"); */
+/* var fileContent = require("php!./mail.php"); */
 
 module.exports = merge(common, {
   devtool: "source-map",
