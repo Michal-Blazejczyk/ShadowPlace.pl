@@ -3,13 +3,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: space-around; 
-    /* align-items: stretch;
-    justify-content: center; */
+    margin-bottom: 20px;
 }
 .panel-widget-style {
 
     text-align: center;
+}
+.widget-title {
+    margin-bottom: 20px;
 }
 .section1 {
     display: flex;
@@ -59,10 +60,41 @@
   height: 10vh;
 }
 .ten12 {
-   
+   font-size: 12px;
     min-width: 50vh;
-    text-align: center;
+    text-align: left;
 }
+.form__item {
+    margin-bottom: 7px;
+}
+@media(max-width: 1000px)
+{
+   .label,
+   .btn-send {
+   font-size: 13px;
+   }
+}  
+@media(max-width: 900px)
+{
+   .label,
+   .btn-send {
+   font-size: 10px;
+   }
+}  
+.btn-send {
+    width: 260px;
+    padding: 5px;
+}
+.btn-send:hover {
+    color: $main-color;
+    background-color: $second-color;
+}
+.textarea {
+        width: 260px;
+        height: 130px;
+        resize: none;
+       }
+
 .ten4 {
     background-color: rgb(31, 218, 40);
     height: 5vh;
@@ -83,6 +115,10 @@
     align-content: center;
     align-self: auto;
 }
+.h2 {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
 
 .ten10 {
     background-color: rgb(226, 206, 150);
@@ -91,9 +127,30 @@
     height: 30vh;
 }
 .textwidget {
-   
+    margin-bottom: 20px;
     height: 250px;
-    width: 500px;
+    width: 752px;
+}
+@media (max-width: 1200px) {
+    .textwidget {
+        height: 350px;
+        margin-bottom: 20px;
+        width: 552px;  
+    } 
+}
+@media (max-width: 1000px) {
+    .textwidget {
+        height: 350px;
+        margin-bottom: 20px;
+        width: 352px;  
+    } 
+}
+@media (max-width: 800px) {
+    .textwidget {
+        height: 250px;
+        margin-bottom: 20px;
+        width: 352px;  
+    } 
 }
 .thanks {
     margin-top: 150px;

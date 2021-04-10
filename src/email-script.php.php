@@ -1,22 +1,17 @@
 <?php
 
-if (isset($_POST['submit'])) {
+$to      = 'budzik555@interia.pl';
+$name    = $_POST['name'];
+$email   = $_POST['email'];
+$subject = 'Nowy e-mail od ' . $name . ' (' . $email . ')';
+$message = $_POST['message'];
+$headers = 'From: ' . $name . ' (' . $email . ')';
+$headers .= 'Content-Type: text/html; charset=utf-8';
 
+mail($to, $subject, $message, $headers);
 
-    $name    = $_POST['name'];
-    $subject = $_POST['subject'];
-    $mailFrom  = $_POST['mail'];
-    $message = $_POST['message'];
-    
-    
-    $mailTo = "budzik555@interia.pl";
-    $headers = "From: ".$mailFrom;
-    $txt = "Otrzymałeś wiadomość od  " .$name.".\n\n".$message;
-	
-    mail ($mailTo, $subject, $txt, $headers);
-    header("Location: kontakt-wyslane.html?mailsend");
-}
-?>  
+echo '<h1>Wiadomość wysłana :)</h1>';
+?>
   <!DOCTYPE html>
 <html lang="pl">
     <head>
