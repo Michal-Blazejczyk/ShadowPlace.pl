@@ -22,6 +22,9 @@
           <i class="fas fa-phone-volume"></i>Pomoc
           <div>602-307-003</div>
         </div>
+        <li class="menu-nav__button">
+          <a class="nav-btn-button" href="./kontakt.html">Napisz do nas!</a>
+        </li>
         <div class="header__hours"><i class="fas fa-clock"></i>Godziny otwarcia
           <div>09.00 - 20.00</div>
         </div>
@@ -485,19 +488,22 @@
             <section  class="section">
               <div class="ten8">  
                 <h2 class="h2">Napisz:</h2>
-
-                <form action="mail.php" method="post">
                 
-                    <input type="text" name="name" placeholder="Imię" required>
-                    <input type="text" name="mail" placeholder="Twój email" required>
-                    <input type="text" name="subject" placeholder="Temat" required>
+                <form action="mail.php" method="post">
+                    <label class="form__item" for="name">Imię</label><br>
+                    <input class="form__item" type="text" name="name" placeholder="wpisz imię" required><br>
+                    <label class="form__item" for="email">Email</label><br>
+                    <input class="form__item" type="mail" name="mail" placeholder="Twój email" required><br>
+                    <label class="form__item" for="name">Temat</label><br>
+                    <input class="form__item" type="text" name="subject" placeholder="Wpisz temat" required><br>
+                    <label class="form__item" for="name">Wiadomość</label><br>
                     <textarea class="textarea" placeholder="wiadomość"
                       type="text" 
                       name="message" 
                       required>
-                    </textarea>
+                    </textarea><br>
                     <button class="btn-send" type="submit" name="submit">WYŚLIJ</button>
-                  </form>
+                </form>
 
 
 
